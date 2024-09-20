@@ -11,7 +11,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
                 const getLinkToken = async () => {
                         const data = await createLinkToken(user);
 
-                        setToken(data?.link_token);
+                        setToken(data?.linkToken);
                 }
 
                 getLinkToken();
@@ -32,11 +32,11 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
 
         return (
                 <>
-                        {variant === "primary" ? (
+                        {variant === 'primary' ? (
                                 <Button className='plaidlink-primary' onClick={() => open()} disabled={!ready}>
                                         Connect bank
                                 </Button>
-                        ) : variant === "ghost" ? (
+                        ) : variant === 'ghost' ? (
                                 <Button>
                                         Connect a bank account
                                 </Button>

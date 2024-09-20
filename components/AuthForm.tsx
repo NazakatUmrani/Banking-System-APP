@@ -103,7 +103,7 @@ const AuthForm = ({ type }: { type: string }) => {
                                 <div className='flex flex-col gap-4'>
                                         <PlaidLink user={user} variant="primary"/>
                                 </div>
-                        ) : (
+                         ) : (
                                 <>
                                         <Form {...form}>
                                                 <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
