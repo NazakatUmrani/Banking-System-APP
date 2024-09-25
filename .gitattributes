@@ -2,3 +2,4 @@ secretfile filter=git-crypt diff=git-crypt
 *.key filter=git-crypt diff=git-crypt
 secretdir/** filter=git-crypt diff=git-crypt
 .env filter=git-crypt diff=git-crypt
+.env.sentry-build-plugin filter=git-crypt diff=git-crypt
